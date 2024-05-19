@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios - Entre Nubes</title>
+    <link rel="stylesheet" href="assets/css/comentarios.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Comentarios sobre tu experiencia con Entre Nubes</h1>
+        <div id="comments-section">
+            <!-- Comentarios agregados dinamicamente -->
+        </div>
+        <button id="leave-comment-btn">¿Te gustaría dejar un comentario sobre tu experiencia al comprar boletos con nosotros? Haz clic aquí</button>
+        <div id="comment-form" class="hidden">
+            <h2>Dejar un comentario</h2>
+            <form id="new-comment-form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="surname">Apellido:</label>
+                    <input type="text" id="surname" name="surname" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comentario:</label>
+                    <textarea id="comment" name="comment" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Calificación:</label>
+                    <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5"><label for="star5">★★★★★</label>
+                        <input type="radio" id="star4" name="rating" value="4"><label for="star4">★★★★☆</label>
+                        <input type="radio" id="star3" name="rating" value="3"><label for="star3">★★★☆☆</label>
+                        <input type="radio" id="star2" name="rating" value="2"><label for="star2">★★☆☆☆</label>
+                        <input type="radio" id="star1" name="rating" value="1"><label for="star1">★☆☆☆☆</label>
+                    </div>
+                </div>
+                <button type="submit">Enviar comentario</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="assets/js/api_server.js"></script>
+    <script src="assets/js/comentarios.js"></script>
+</body>
+</html>

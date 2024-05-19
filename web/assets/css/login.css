@@ -1,0 +1,80 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    background-image: url('../img/clouds.jpg');
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alineación vertical de elementos */
+}
+
+.title {
+    color: #fff; /* Blanco */
+    margin-bottom: 30px; /* Espacio entre el título y el contenedor */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Blanco con transparencia */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    width: 80%; /* Ancho ajustado */
+    max-width: 500px;
+}
+
+.login-container {
+    margin-top: 20px;
+}
+
+.login-title {
+    color: #004d99; /* Azul marino */
+    text-align: center;
+}
+
+.login-label {
+    color: #004d99; /* Azul marino */
+}
+
+.login-input {
+    border: 1px solid #004d99; /* Azul marino */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.login-button {
+    background-color: #004d99; /* Azul marino */
+    color: #fff; /* Blanco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-button:hover {
+    background-color: #003366; /* Azul marino más oscuro */
+}
+
+.forgot-password {
+    color: #004d99; /* Azul marino */
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #004d99; /* Azul marino */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}

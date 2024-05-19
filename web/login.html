@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre Nubes - Iniciar sesión</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    <div class="background">
+        <h1 class="title">Entre Nubes</h1>
+        <div class="container">
+            <div class="login-container">
+                <h2 class="login-title">Iniciar sesión</h2>
+                <form id="loginForm" method="post" enctype="multipart/form-data">
+                    <label for="username" class="login-label">Nombre de usuario:</label><br>
+                    <input type="text" id="username" name="username" class="login-input" required><br>
+                    <label for="password" class="login-label">Contraseña:</label><br>
+                    <input type="password" id="password" name="password" class="login-input" required><br><br>
+                    <input type="submit" value="Ingresar" class="login-button">
+                </form>
+                <div class="forgot-password">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="assets/js/api_server.js"></script>
+<script src="assets/js/login.js"></script>
+</body>
+</html>

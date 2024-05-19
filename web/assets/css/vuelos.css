@@ -1,0 +1,117 @@
+/* Estilos CSS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e2a3a; /* Azul marino opaco */
+    color: #fff; /* Blanco */
+    padding: 10px 0;
+}
+
+.container-hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customer-support,
+.container-logo,
+.container-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.customer-support i,
+.container-logo i,
+.container-user i {
+    font-size: 1.5rem;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #1e2a3a; /* Azul marino opaco */
+    display: flex;
+}
+
+.menu li {
+    padding: 10px 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff; /* Blanco */
+}
+
+.menu li a:hover {
+    background-color: #0b1520; /* Azul marino un poco más oscuro */
+}
+
+.container-fly {
+    background-color: #1e2a3a; /* Azul marino opaco */
+    color: #fff; /* Blanco */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container-fly h1 {
+    font-size: 2.5rem;
+}
+
+.container-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-category {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.card-category:hover {
+    transform: translateY(-10px);
+}
+
+.container-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.container-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-img p {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(30, 42, 58, 0.7); /* Fondo para el nombre del país */
+    padding: 10px 20px;
+    border-radius: 1rem;
+    color: #fff; /* Texto en blanco */
+    font-size: 1.2rem;
+}
