@@ -1,4 +1,4 @@
-const {userLoginSuccess} = require('./routes/user/login');
+const {userLogin} = require('./routes/user/login');
 const {userRegister} = require('./routes/user/register');
 const {getAllReviews} = require('./routes/review/get_all_reviews');
 
@@ -18,7 +18,7 @@ const init = async () => {
         {
             method: 'POST',
             path: '/user/login',
-            handler: userLoginSuccess
+            handler: userLogin
         },
         {
             method: 'POST',

@@ -34,4 +34,4 @@ function userLogin(request, h) {
     return response.then(data => data);
 }
 
-module.exports = {userLoginSuccess: userLogin}
+module.exports = {userLogin}
