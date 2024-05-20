@@ -1,6 +1,7 @@
 const {userLogin} = require('./routes/user/login');
 const {userRegister} = require('./routes/user/register');
 const {getAllReviews} = require('./routes/review/get_all_reviews');
+const {createReview} = require('./routes/review/create_review');
 
 const Hapi = require('@hapi/hapi');
 
@@ -29,6 +30,11 @@ const init = async () => {
             method: 'GET',
             path: '/review/get_all_reviews',
             handler: getAllReviews
+        },
+        {
+            method: 'POST',
+            path: '/review/create_review',
+            handler: createReview
         }
     ])
     await server.start();

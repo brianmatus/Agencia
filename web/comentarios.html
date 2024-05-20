@@ -12,18 +12,9 @@
         <div id="comments-section">
             <!-- Comentarios agregados dinamicamente -->
         </div>
-        <button id="leave-comment-btn">¿Te gustaría dejar un comentario sobre tu experiencia al comprar boletos con nosotros? Haz clic aquí</button>
-        <div id="comment-form" class="hidden">
-            <h2>Dejar un comentario</h2>
+        <div id="comment-form">
+            <h1>Dejar un comentario</h1>
             <form id="new-comment-form">
-                <div class="form-group">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="surname">Apellido:</label>
-                    <input type="text" id="surname" name="surname" required>
-                </div>
                 <div class="form-group">
                     <label for="comment">Comentario:</label>
                     <textarea id="comment" name="comment" rows="5" required></textarea>
@@ -31,11 +22,11 @@
                 <div class="form-group">
                     <label>Calificación:</label>
                     <div class="rating">
-                        <input type="radio" id="star5" name="rating" value="5"><label for="star5">★★★★★</label>
-                        <input type="radio" id="star4" name="rating" value="4"><label for="star4">★★★★☆</label>
-                        <input type="radio" id="star3" name="rating" value="3"><label for="star3">★★★☆☆</label>
-                        <input type="radio" id="star2" name="rating" value="2"><label for="star2">★★☆☆☆</label>
-                        <input type="radio" id="star1" name="rating" value="1"><label for="star1">★☆☆☆☆</label>
+                        <input type="radio" id="star5" name="rating" value="5"/><label for="star5">★</label>
+                        <input type="radio" id="star4" name="rating" value="4"/><label for="star4">★</label>
+                        <input type="radio" id="star3" name="rating" value="3"/><label for="star3">★</label>
+                        <input type="radio" id="star2" name="rating" value="2"/><label for="star2">★</label>
+                        <input type="radio" id="star1" name="rating" value="1"/><label for="star1">★</label>
                     </div>
                 </div>
                 <button type="submit">Enviar comentario</button>
@@ -47,76 +38,65 @@
     <script src="assets/js/comentarios.js"></script>
 
     <footer class="footer">
-        <div class="container container-footer">
+        <div class="container-footer">
             <div class="menu-footer">
                 <div class="contact-info">
                     <p class="title-footer">Información de Contacto</p>
                     <ul>
-                        <li>
-                            Dirección: Bosques de Alcalá, Zona 16
-                            Ciudad de Guatemala, Guatemala
-                        </li>
+                        <li> Dirección: Bosques de Alcalá, Zona 16 Ciudad de Guatemala, Guatemala</li>
                         <li>Teléfono: 3305-0505</li>
                         <li>EmaiL: entrenubes@support.com</li>
                     </ul>
                     <div class="social-icons">
-                        <span class="facebook">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </span>
-                        <span class="twitter">
-                            <i class="fa-brands fa-twitter"></i>
-                        </span>
-                        <span class="youtube">
-                            <i class="fa-brands fa-youtube"></i>
-                        </span>
-                        <span class="pinterest">
-                            <i class="fa-brands fa-pinterest-p"></i>
-                        </span>
-                        <span class="instagram">
-                            <i class="fa-brands fa-instagram"></i>
-                        </span>
+                        <a href="https://www.facebook.com/profile.php?id=61560070703281">
+                            <span class="facebook"><i class="fa-brands fa-facebook-f"></i></span>
+                        </a>
+                        <a href="#">
+                            <span class="twitter"><i class="fa-brands fa-twitter"></i></span>
+                        </a>
+                        <a href="#">
+                            <span class="instagram"><i class="fa-brands fa-instagram"></i></span>
+                        </a>
                     </div>
                 </div>
-
                 <div class="information">
                     <p class="title-footer">Información</p>
                     <ul>
-                        <li><a href="#">Acerca de Nosotros</a></li>
-                        <li><a href="#">Contactános</a></li>
+                        <li>
+                            <a href="/aboutus.html">Acerca de Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#">Contactános</a>
+                        </li>
                     </ul>
                 </div>
-
                 <div class="my-account">
                     <p class="title-footer">Mi cuenta</p>
-
                     <ul>
-                        <li><a href="#">Mi cuenta</a></li>
-                        <li><a href="#">Historial de viajes</a></li>
+                        <li>
+                            <a href="#">Mi cuenta</a>
+                        </li>
+                        <li>
+                            <a href="#">Historial de viajes</a>
+                        </li>
                     </ul>
                 </div>
-
                 <div class="newsletter">
                     <p class="title-footer">Boletín informativo</p>
-
                     <div class="content">
-                        <p>
-                            Suscríbete a nuestros informes sobre nuevas ofertas
-                            de viajes a traves de Centro america.
-                        </p>
+                        <p> Suscríbete a nuestros informes sobre nuevas ofertas de viajes a traves de Centro america. </p>
                         <input type="email" placeholder="Ingresa el correo aquí...">
                         <button>Suscríbete</button>
                     </div>
                 </div>
             </div>
-
             <div class="copyright">
-                <p>
-                    Desarrollado por Entre Nubes &copy; 2024
-                </p>
+                <p> Desarrollado por Entre Nubes &copy; 2024 </p>
             </div>
         </div>
     </footer>
-  
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
+

@@ -1,9 +1,54 @@
-document.getElementById('leave-comment-btn').addEventListener('click', function() {
-    document.getElementById('comment-form').classList.toggle('hidden');
+const form = document.getElementById("new-comment-form");
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+
+
+
+    let ratingButton = $('input[type="radio"]:checked');
+
+    if (ratingButton.length !== 1) {
+        alert("Debes seleccionar un rating");
+        return;
+    }
+
+    ratingButton = ratingButton[0];
+    const rating = parseInt($(ratingButton).val());
+    const username = localStorage.getItem("username");
+    const comment = document.getElementById('comment').value;
+
+    const data = {
+        username: username,
+        comment: comment,
+        rating: rating
+    }
+
+
+    fetch(API_BASE_URL + "/review/create_review", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    }).then(response => {
+        if (!response.ok) {
+            response.json().then( data => {
+                alert("Error al mandar review: " + data.message);
+                console.log(data);
+            })
+        } else {
+            alert("Comentario creado con exito");
+            window.location.reload();
+        }
+    })
+
+
+
+
+
+
+
 });
-
-
-
 function addReview(name, surname, comment, rating, date) {
     const commentSection = document.getElementById('comments-section');
 
@@ -29,9 +74,6 @@ function addReview(name, surname, comment, rating, date) {
     newComment.appendChild(commentRating);
 
     commentSection.appendChild(newComment);
-
-    document.getElementById('new-comment-form').reset();
-    document.getElementById('comment-form').classList.add('hidden');
 };
 
 $(document).ready(loadComments);
