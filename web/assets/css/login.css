@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html {
+	font-size: 62.5%;
+	font-family: 'Poppins', sans-serif;
+}
+
 body, html {
     height: 100%;
     margin: 0;
@@ -23,7 +30,7 @@ body, html {
     background-color: rgba(255, 255, 255, 0.9); /* Blanco con transparencia */
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 20px 0px 4a7b9e;
     width: 80%; /* Ancho ajustado */
     max-width: 500px;
 }
@@ -33,16 +40,16 @@ body, html {
 }
 
 .login-title {
-    color: #004d99; /* Azul marino */
+    color: #4a7b9e; /* Azul marino */
     text-align: center;
 }
 
 .login-label {
-    color: #004d99; /* Azul marino */
+    color: #4a7b9e; /* Azul marino */
 }
 
 .login-input {
-    border: 1px solid #004d99; /* Azul marino */
+    border: 1px solid #4a7b9e; /* Azul marino */
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
