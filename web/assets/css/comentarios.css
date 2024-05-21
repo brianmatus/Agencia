@@ -8,7 +8,7 @@ html {
 body {
     font-weight: 500;
     background-color: #f4f4f4;
-    color: #4a7b9e;
+    color: #000000;
     margin: 0;
     padding: 0;
 }
@@ -24,7 +24,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #4a7b9e;
+    color: #000000;
     margin-bottom: 20px;
 }
 
@@ -149,9 +149,123 @@ form button {
 form button:hover {
     background-color: #555;
 }
-/* ********************************** */
-/*               FOOTER               */
-/* ********************************** */
+
+.container-hero {
+	background-color: var(--background-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.header-top {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	font-size: 1.3rem;
+}
+
+.header-top i {
+	font-size: 2.5rem;
+}
+
+.menu-container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;
+	margin-top: 10px;
+}
+
+.menu {
+	display: flex;
+	gap: 20px;
+	list-style: none;
+	padding: 0;
+}
+
+.auth-links {
+	display: flex;
+	gap: 20px;
+}
+
+.menu li, .auth-links a {
+	text-decoration: none;
+	font-size: 1.3rem;
+	color: #000;
+}
+
+
+
+
+
+.hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 0;
+}
+
+.customer-support {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.customer-support i {
+	font-size: 3.3rem;
+}
+
+.content-customer-support {
+	display: flex;
+	flex-direction: column;
+}
+
+.container-logo {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.container-logo i {
+	font-size: 3rem;
+}
+
+.container-logo h1 a {
+	text-decoration: none;
+	color: #000;
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+}
+
+.container-user {
+	display: flex;
+	gap: 1rem;
+	cursor: pointer;
+}
+
+.container-user .fa-user {
+	font-size: 3rem;
+	color: var(--primary-color);
+	padding-right: 2.5rem;
+	border-right: 1px solid #e2e2e2;
+}
+
+.container-user .fa-basket-shopping {
+	font-size: 3rem;
+	color: var(--primary-color);
+	padding-left: 1rem;
+}
+
+.content-shopping-cart {
+	display: flex;
+	flex-direction: column;
+}
+
 
 
 .container-footer {
@@ -233,7 +347,7 @@ form button:hover {
 }
 
 .social-icons span i {
-	color: #fff;
+	color: #ffffff;
 	font-size: 1.2rem;
 }
 
@@ -243,14 +357,6 @@ form button:hover {
 
 .twitter {
 	background-color: #00acee;
-}
-
-.youtube {
-	background-color: #c4302b;
-}
-
-.pinterest {
-	background-color: #c8232c;
 }
 
 .instagram {
@@ -319,4 +425,16 @@ form button:hover {
 .copyright p {
 	font-weight: 400;
 	font-size: 1.6rem;
+}
+.my-account,
+.newsletter,
+.subscribe-email,
+.subscribe-button {
+    display: none;
+}
+
+.contact-info {
+    max-width: 400px; 
+    margin: 0 auto;
+    text-align: center; 
 }

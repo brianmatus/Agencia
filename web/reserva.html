@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comentarios - ENTRE NUBES</title>
-    <link rel="stylesheet" href="assets/css/comentarios.css">
+    <title>Reserva - ENTRE NUBES</title>
+    <link rel="stylesheet" href="assets/css/reserva.css">
 </head>
 <body>
     <header>
@@ -33,43 +33,35 @@
         </div>
     </header>
     <div class="container">
-        <h1>Comentarios sobre tu experiencia con ENTRE NUBES</h1>
-        <div id="comments-section">
-        </div>
-        <div id="comment-form">
-            <h1>Dejar un comentario</h1>
-            <form id="new-comment-form">
-                <div class="form-group">
-                    <label for="comment">Comentario:</label>
-                    <textarea id="comment" name="comment" rows="5" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label>Calificación:</label>
-                    <div class="rating">
-                        <input type="radio" id="star5" name="rating" value="5"/><label for="star5">★</label>
-                        <input type="radio" id="star4" name="rating" value="4"/><label for="star4">★</label>
-                        <input type="radio" id="star3" name="rating" value="3"/><label for="star3">★</label>
-                        <input type="radio" id="star2" name="rating" value="2"/><label for="star2">★</label>
-                        <input type="radio" id="star1" name="rating" value="1"/><label for="star1">★</label>
-                    </div>
-                </div>
-                <button type="submit">Enviar comentario</button>
-            </form>
-        </div>
+        <h1>Reserva tu vuelo</h1>
+        <form id="reservationForm">
+            <div id="passengerInfo"></div>
+            
+            <h3>Información del vuelo</h3>
+            <p>Aerolínea: <span id="airlineName">AeroNubes</span></p>
+            <p>Número de vuelo: <span id="flightNumber">AN1234</span></p>
+            <p>Fecha de salida: <span id="departureDate"></span></p>
+            <p>Fecha de regreso: <span id="returnDate"></span></p>
+            <p>Tiempo total del vuelo: <span id="totalTime">3h 45m</span></p>
+            <p>Precio total: $<span id="totalPrice"></span></p>
+
+            <h3>Forma de pago</h3>
+            <div id="paymentButtons">
+                <a href="tarjeta.html" class="btnLink">Tarjeta de Crédito</a>
+                <a href="efectivo.html" class="btnLink">Efectivo</a>
+            </div>
+        </form>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="assets/js/api_server.js"></script>
-    <script src="assets/js/comentarios.js"></script>
 
     <footer class="footer">
-        <div class="container-footer">
+        <div class="container container-footer">
             <div class="menu-footer">
                 <div class="contact-info">
                     <p class="title-footer">Información de Contacto</p>
                     <ul>
                         <li> Dirección: Bosques de Alcalá, Zona 16 Ciudad de Guatemala, Guatemala</li>
                         <li>Teléfono: 3305-0505</li>
-                        <li>EmaiL: equipo.entrenubes@gmail.com</li>
+                        <li>Email: equipo.entrenubes@gmail.com</li>
                         <li>
                             <a href="aboutus.html">Acerca de Nosotros</a>
                         </li>
@@ -92,8 +84,7 @@
             </div>
         </div>
     </footer>
-    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
 
+    <script src="assets/js/reservar.js"></script>
 </body>
 </html>
-

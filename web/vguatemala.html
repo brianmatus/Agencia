@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuelos - ENTRE NUBES</title>
+    <link rel="stylesheet" href="assets/css/vguatemala.css">
+</head>
+<body>
+
+    <header>
+        <div class="container-hero">
+            <div class="header-top">
+                <h1 class="logo">
+                    <i class="fa-solid fa-earth-americas" style="text-align: right;"></i>
+                    <span>ENTRE NUBES</span>
+                </h1>
+            </div>
+            <div class="menu-container">
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a href="principal.html">INICIO</a>
+                        </li>
+                        <li>
+                            <a href="vuelos.html">VUELOS</a>
+                        </li>
+                        <li>
+                            <a href="comentarios.html">COMENTARIOS</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="divider"></div>
+
+    <div class="container">
+        <img src="assets/img/guatemala.jpg" alt="Guatemala" class="imagenPais">
+        <div id="detallesReserva" class="detallesReserva">
+            <div class="infoReserva">
+                <div class="paisInfo">
+                    <h3>Guatemala</h3>
+                    <p class="descripcion">¡Bienvenido a Guatemala! Este país centroamericano te sorprenderá con su rica cultura, impresionante naturaleza y coloridos paisajes. Desde las majestuosas ruinas mayas de Tikal hasta los vibrantes mercados de Chichicastenango, Guatemala ofrece una experiencia única llena de historia, tradición y aventura.</p>
+                    <p class="descripcion">Descubre la belleza de sus volcanes, como el majestuoso volcán Tajumulco, el más alto de Centroamérica, o sumérgete en las aguas cristalinas del lago Atitlán, rodeado de pintorescos pueblos indígenas. Disfruta de la exquisita gastronomía guatemalteca, con platos como el pepián, el kak'ik y el tradicional tamal.</p>
+                    <p class="descripcion">No te pierdas la oportunidad de explorar las maravillas naturales de Guatemala, desde las selvas tropicales de Petén hasta las impresionantes cascadas de Semuc Champey. Con su cálido clima y gente amable, Guatemala te espera con los brazos abiertos para ofrecerte una experiencia inolvidable.</p>
+                </div>
+            </div>
+            <div class="infoReserva">
+                <label for="paisSalida">País de Salida:</label>
+                <select id="paisSalida" name="paisSalida">
+                    <option value="Honduras">Honduras</option>
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="Panamá">Panamá</option>
+                </select>
+            </div>
+            <div class="infoReserva">
+                <label for="fechaSalida">Fecha de Salida:</label>
+                <input type="date" id="fechaSalida" name="fechaSalida">
+            </div>
+            <div class="infoReserva">
+                <label for="fechaRegreso">Fecha de Regreso:</label>
+                <input type="date" id="fechaRegreso" name="fechaRegreso">
+            </div>
+            <div class="infoReserva">
+                <label for="numPersonas">Número de Personas:</label>
+                <input type="number" id="numPersonas" name="numPersonas" min="1" value="1">
+            </div>
+            <div class="botonesReserva">
+                <button id="btnCalcular" class="btnCalcular">Calcular</button>
+                <button id="btnReservar" class="btnReservar">
+                    <a href="reserva.html" style="text-decoration: none; color: inherit;">Reservar</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer" style="text-align: center;">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li>Dirección: Bosques de Alcalá, Zona 16 Ciudad de Guatemala, Guatemala</li>
+                        <li>Teléfono: 3305-0505</li>
+                        <li>Email: equipo.entrenubes@gmail.com</li>
+                        <li>
+                            <a href="aboutus.html">Acerca de Nosotros</a>
+                        </li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61560070703281">
+                            <span class="facebook"><i class="fa-brands fa-facebook-f"></i></span>
+                        </a>
+                        <a href="https://x.com/entre_nubesgt">
+                            <span class="twitter"><i class="fa-brands fa-twitter"></i></span>
+                        </a>
+                        <a href="https://www.instagram.com/entre_nubesgt/">
+                            <span class="instagram"><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Desarrollado por Entre Nubes &copy; 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/vguatemala.js"></script>
+</body>
+</html>

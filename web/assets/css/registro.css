@@ -15,8 +15,10 @@ body {
     padding: 0;
 }
 
+
+
 .container {
-    width: 80%; /* Cambiar el ancho al 80% */
+    width: 80%; 
     max-width: 800px;
     padding: 20px;
     box-sizing: border-box;
@@ -40,18 +42,18 @@ body {
 
 .registration-container {
     display: flex;
-    flex-direction: column; /* Alineación en columna */
+    flex-direction: column; 
 }
 
 .row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px; /* Aumento de espacio entre filas */
+    margin-bottom: 20px; 
 }
 
 .column {
     flex: 1;
-    margin-right: 20px; /* Aumento de espacio entre columnas */
+    margin-right: 20px; 
 }
 
 .column:last-child {
@@ -74,7 +76,7 @@ body {
 .registration-button-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* Espacio entre los campos y el botón */
+    margin-top: 20px; 
 }
 
 .registration-button {
