@@ -1,7 +1,14 @@
 const {userLogin} = require('./routes/user/login');
 const {userRegister} = require('./routes/user/register');
+
 const {getAllReviews} = require('./routes/review/get_all_reviews');
 const {createReview} = require('./routes/review/create_review');
+
+const {getAllCountries} = require('./routes/country/get_all_countries');
+const {getInfo} = require("./routes/country/get_info");
+
+const {createReservation} = require("./routes/reservation/create_reservation");
+
 
 const Hapi = require('@hapi/hapi');
 
@@ -35,6 +42,21 @@ const init = async () => {
             method: 'POST',
             path: '/review/create_review',
             handler: createReview
+        },
+        {
+            method: 'GET',
+            path: '/country/get_all',
+            handler: getAllCountries
+        },
+        {
+            method: 'GET',
+            path: '/country/get_info',
+            handler: getInfo
+        },
+        {
+            method: 'POST',
+            path: '/reservation/create_reservation',
+            handler: createReservation
         }
     ])
     await server.start();

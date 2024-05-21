@@ -87,7 +87,6 @@ function loadComments() {
         username: miUsuario
     }
 
-
     const stringParametros = Object.keys(data).map(key => {
         return encodeURI(key) + "=" + encodeURIComponent(data[key])
     }).join("&")

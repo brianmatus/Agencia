@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vuelos - ENTRE NUBES</title>
-    <link rel="stylesheet" href="assets/css/vnicaragua.css">
+    <link rel="stylesheet" href="assets/css/vcostarica.css">
 </head>
 <body>
 
@@ -37,24 +37,17 @@
     <div class="divider"></div>
 
     <div class="container">
-        <img src="assets/img/nicaragua.jpg" alt="Nicaragua" class="imagenPais">
+        <img id="countryImage" src="assets/img/guatemala.jpg" alt="Costa Rica" class="imagenPais">
         <div id="detallesReserva" class="detallesReserva">
             <div class="infoReserva">
-                <div class="paisInfo">
-                    <h3>Nicaragua</h3>
-                    <p class="descripcion">¡Bienvenido a Nicaragua! Con su impresionante belleza natural, rica historia y cultura vibrante, este país centroamericano te cautivará desde el primer momento. Desde los majestuosos volcanes de la cordillera hasta las paradisíacas playas de San Juan del Sur, Nicaragua ofrece una experiencia única llena de aventura y descubrimiento.</p>
-                    <p class="descripcion">Explora la belleza de sus reservas naturales, como el volcán Masaya y la isla de Ometepe, hogar de una gran biodiversidad. Sumérgete en la rica cultura nicaragüense visitando las coloridas ciudades coloniales de León y Granada, o disfruta de la deliciosa gastronomía local, con platos como el vigorón, el gallo pinto y el nacatamal.</p>
-                    <p class="descripcion">No te pierdas la oportunidad de explorar las maravillas naturales y culturales de Nicaragua, desde las impresionantes cataratas de la Selva Negra hasta las ancestrales ruinas de la ciudad de León Viejo. Con su clima tropical y la calidez de su gente, Nicaragua te espera con los brazos abiertos para ofrecerte una experiencia inolvidable.</p>
+                <div id="countryInfo" class="paisInfo">
+                    <h3 id="countryName">[NombrePais]</h3>
                 </div>
             </div>
             <div class="infoReserva">
                 <label for="paisSalida">País de Salida:</label>
                 <select id="paisSalida" name="paisSalida">
-                    <option value="Guatemala">Guatemala</option>
-                    <option value="Honduras">Honduras</option>
-                    <option value="El Salvador">El Salvador</option>
-                    <option value="Costa Rica">Costa Rica</option>
-                    <option value="Panamá">Panamá</option>
+                <!--Agregados dinamicamente-->
                 </select>
             </div>
             <div class="infoReserva">
@@ -70,9 +63,14 @@
                 <input type="number" id="numPersonas" name="numPersonas" min="1" value="1">
             </div>
             <div class="botonesReserva">
-                <button id="btnCalcular" class="btnCalcular">Calcular</button>
+                <label for="numeracionTarjeta">Numeracion Tarjeta:</label>
+                <input type="text" id="numeracionTarjeta" name="numeracionTarjeta">
+            </div>
+            <div class="botonesReserva">
+                <button style="display: none;" id="btnCalcular" class="btnCalcular">Calcular</button>
                 <button id="btnReservar" class="btnReservar">
-                    <a href="reserva.html" style="text-decoration: none; color: inherit;">Reservar</a>
+                    <!--<a href="reserva.html" style="text-decoration: none; color: inherit;">Reservar</a>-->
+                    <a href="#" onclick="reservarVuelo();return false;" style="text-decoration: none; color: inherit;">Reservar</a>
                 </button>
             </div>
         </div>
@@ -109,7 +107,8 @@
             </div>
         </div>
     </footer>
-
-    <script src="assets/js/vnicaragua.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="assets/js/api_server.js"></script>
+    <script src="assets/js/ver_vuelo.js"></script>
 </body>
 </html>
